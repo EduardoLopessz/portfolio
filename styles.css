@@ -478,9 +478,10 @@ img{ max-width: 100%; display: block; }
   font-size: 1.2rem;
   margin-bottom: 16px;
 }
-.creation__icon--twitch{ background: rgba(255,70,85,0.12); color: var(--red); }
-.creation__icon--music{ background: rgba(30,215,96,0.12); color: var(--green); }
-.creation__icon--tiktok{ background: rgba(255,176,32,0.12); color: var(--gold); }
+.creation__icon--twitch{ background: rgba(145,70,255,0.14); }
+.creation__icon--music{ background: rgba(30,215,96,0.14); }
+.creation__icon--tiktok{ background: rgba(37,244,238,0.14); }
+.creation__logo{ width: 22px; height: 22px; }
 
 .creation__title{ font-family: var(--font-display); font-size: 1.1rem; margin: 0 0 8px; }
 .creation__desc{ color: var(--text-muted); font-size: 0.88rem; margin: 0 0 16px; }
