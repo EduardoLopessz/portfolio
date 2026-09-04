@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eduardo Lopes — Portfólio</title>
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="scanline" aria-hidden="true"></div>
+
+<header class="topbar">
+  <div class="topbar__inner">
+    <a href="#inicio" class="brand">
+      <span class="brand__dot"></span>EDUARDO<span class="brand__accent">.LOPES</span>
+    </a>
+    <nav class="nav" id="nav">
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__list" id="navList">
+        <li><a href="#inicio" class="nav__link is-active" data-nav>início</a></li>
+        <li><a href="#projetos" class="nav__link" data-nav>projetos</a></li>
+        <li><a href="#skills" class="nav__link" data-nav>skills</a></li>
+        <li><a href="#criacoes" class="nav__link" data-nav>criações</a></li>
+        <li><a href="#sobre" class="nav__link" data-nav>sobre</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ================= HERO / INÍCIO ================= -->
+  <section id="inicio" class="section hero">
+    <div class="hero__grid" aria-hidden="true"></div>
+    <div class="hero__inner">
+
+      <div class="hero__text">
+        <p class="eyebrow"><span class="dot dot--live"></span> disponível para novas oportunidades</p>
+        <h1 class="hero__title">
+          Eduardo Lopes<span class="accent-blink">_</span>
+        </h1>
+        <p class="hero__subtitle">
+          Front-end dev em formação, apaixonado por criar interfaces que funcionam
+          <em>e</em> têm personalidade. Candidato à <strong>Apple Developer Academy PUCPR</strong>.
+        </p>
+
+        <div class="hero__cta">
+          <a href="#projetos" class="btn btn--primary">ver projetos</a>
+          <a href="https://github.com/EduardoLopessz" target="_blank" rel="noopener" class="btn btn--ghost">
+            github ↗
+          </a>
+        </div>
+      </div>
+
+      <div class="hud" id="hud">
+        <div class="hud__head">
+          <span class="hud__title">status.log</span>
+          <span class="hud__blink"></span>
+        </div>
+        <div class="hud__body">
+          <div class="hud__row">
+            <span class="hud__label">player</span>
+            <span class="hud__value">Eduardo Lopes</span>
+          </div>
+          <div class="hud__row">
+            <span class="hud__label">status</span>
+            <span class="hud__value hud__status" id="hudStatus">jogando Valorant</span>
+          </div>
+          <div class="hud__row">
+            <span class="hud__label">rank</span>
+            <span class="hud__value">estudante · front-end</span>
+          </div>
+          <div class="hud__divider"></div>
+          <div class="hud__tags">
+            <span class="tag tag--game">valorant</span>
+            <span class="tag tag--game">cs</span>
+            <span class="tag tag--game">fortnite</span>
+            <span class="tag tag--anime">one piece</span>
+            <span class="tag tag--anime">naruto</span>
+            <span class="tag tag--music">spotify</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <a href="#projetos" class="scroll-hint" aria-label="Rolar para projetos">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ================= PROJETOS ================= -->
+  <section id="projetos" class="section">
+    <div class="section__inner">
+      <p class="section__eyebrow">01 — portfólio de projetos</p>
+      <h2 class="section__title">Projetos</h2>
+      <p class="section__lead">
+        Projetos reais, direto do meu <a href="https://github.com/EduardoLopessz" target="_blank" rel="noopener">GitHub</a>.
+        Alguns são estudos, outros são ideias que virei código — todos com o objetivo de aprender fazendo.
+      </p>
+
+      <div class="cards" id="projectCards">
+
+        <article class="card">
+          <div class="card__top">
+            <span class="card__lang lang--html">HTML/CSS</span>
+            <a href="https://github.com/EduardoLopessz/smartgram" target="_blank" rel="noopener" class="card__link" aria-label="Ver repositório smartgram">↗</a>
+          </div>
+          <h3 class="card__title">smartgram</h3>
+          <p class="card__desc">
+            Clone das telas de login e cadastro do Instagram em HTML e CSS puro — projeto de estudo
+            com foco em semântica, acessibilidade e responsividade.
+          </p>
+          <div class="card__foot">
+            <a href="https://eduardolopessz.github.io/smartgram/" target="_blank" rel="noopener" class="card__demo">ver demo ao vivo →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__top">
+            <span class="card__lang lang--py">Python</span>
+            <a href="https://github.com/EduardoLopessz/Puc_Fit" target="_blank" rel="noopener" class="card__link" aria-label="Ver repositório Puc_Fit">↗</a>
+          </div>
+          <h3 class="card__title">Puc_Fit</h3>
+          <p class="card__desc">
+            Sistema em Python para gerenciamento básico de saúde e bem-estar: cálculo de IMC,
+            hidratação, gasto calórico e sugestões de dieta e treino via terminal.
+          </p>
+          <div class="card__foot">
+            <span class="card__demo card__demo--muted">projeto de terminal</span>
+          </div>
+        </article>
+
+        <article class="card card--empty">
+          <div class="card__top">
+            <span class="card__lang lang--soon">em breve</span>
+          </div>
+          <h3 class="card__title">próximo projeto</h3>
+          <p class="card__desc">
+            Espaço reservado pro próximo projeto que eu subir no GitHub. Sempre tem algo novo em construção.
+          </p>
+          <div class="card__foot">
+            <span class="card__demo card__demo--muted">a preencher</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SKILLS ================= -->
+  <section id="skills" class="section section--alt">
+    <div class="section__inner">
+      <p class="section__eyebrow">02 — character sheet</p>
+      <h2 class="section__title">Skills</h2>
+      <p class="section__lead">
+        Tecnologias que já domino e as que estou treinando ativamente — como uma barra de atributos.
+      </p>
+
+      <!-- ---- Grid de ícones das tecnologias ---- -->
+      <div class="techgrid">
+        <div class="tech">
+          <img src="https://cdn.simpleicons.org/html5/E34F26" alt="" class="tech__icon">
+          <span class="tech__name">HTML5</span>
+        </div>
+        <div class="tech">
+          <img src="https://cdn.simpleicons.org/css3/1572B6" alt="" class="tech__icon">
+          <span class="tech__name">CSS3</span>
+        </div>
+        <div class="tech tech--learning">
+          <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="" class="tech__icon">
+          <span class="tech__name">JavaScript</span>
+          <span class="tech__badge">aprendendo</span>
+        </div>
+        <div class="tech">
+          <img src="https://cdn.simpleicons.org/python/3776AB" alt="" class="tech__icon">
+          <span class="tech__name">Python</span>
+        </div>
+        <div class="tech">
+          <img src="https://cdn.simpleicons.org/git/F05032" alt="" class="tech__icon">
+          <span class="tech__name">Git</span>
+        </div>
+        <div class="tech">
+          <img src="https://cdn.simpleicons.org/github/E8EAED" alt="" class="tech__icon">
+          <span class="tech__name">GitHub</span>
+        </div>
+        <div class="tech">
+          <img src="https://cdn.simpleicons.org/dart/0175C2" alt="" class="tech__icon">
+          <span class="tech__name">Dart</span>
+        </div>
+        <div class="tech">
+          <img src="https://cdn.simpleicons.org/flutter/02569B" alt="" class="tech__icon">
+          <span class="tech__name">Flutter</span>
+        </div>
+        <div class="tech">
+          <img src="https://cdn.simpleicons.org/n8n/EA4B71" alt="" class="tech__icon">
+          <span class="tech__name">n8n</span>
+        </div>
+        <div class="tech">
+          <img src="https://cdn.simpleicons.org/figma/F24E1E" alt="" class="tech__icon">
+          <span class="tech__name">Figma</span>
+        </div>
+        <div class="tech tech--empty">
+          <span class="tech__plus">+</span>
+          <span class="tech__name">próxima</span>
+        </div>
+      </div>
+
+      <div class="skills">
+        <div class="skills__group">
+          <h3 class="skills__group-title">domínio</h3>
+
+          <div class="skill">
+            <div class="skill__head"><span>HTML5</span><span>90%</span></div>
+            <div class="skill__bar"><div class="skill__fill" style="--pct:90%"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill__head"><span>CSS3</span><span>85%</span></div>
+            <div class="skill__bar"><div class="skill__fill" style="--pct:85%"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill__head"><span>Python</span><span>65%</span></div>
+            <div class="skill__bar"><div class="skill__fill" style="--pct:65%"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill__head"><span>Git &amp; GitHub</span><span>60%</span></div>
+            <div class="skill__bar"><div class="skill__fill" style="--pct:60%"></div></div>
+          </div>
+        </div>
+
+        <div class="skills__group">
+          <h3 class="skills__group-title">treinando agora</h3>
+          <div class="skill">
+            <div class="skill__head"><span>JavaScript</span><span>40%</span></div>
+            <div class="skill__bar"><div class="skill__fill" style="--pct:40%"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill__head"><span>Dart &amp; Flutter</span><span>35%</span></div>
+            <div class="skill__bar"><div class="skill__fill" style="--pct:35%"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill__head"><span>n8n / automação</span><span>75%</span></div>
+            <div class="skill__bar"><div class="skill__fill" style="--pct:75%"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill__head"><span>UI/UX &amp; Figma</span><span>45%</span></div>
+            <div class="skill__bar"><div class="skill__fill" style="--pct:45%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <p class="skills__note">* números autoavaliados — edite livremente em <code>index.html</code> conforme evoluir.</p>
+    </div>
+  </section>
+
+  <!-- ================= CRIAÇÕES ================= -->
+  <section id="criacoes" class="section">
+    <div class="section__inner">
+      <p class="section__eyebrow">03 — coleção de criações</p>
+      <h2 class="section__title">Criações</h2>
+      <p class="section__lead">
+        O que eu crio fora do código: lives, música e edição de vídeo. Cada card abaixo é uma aba
+        pronta pra eu completar com links, prints e destaques.
+      </p>
+
+      <div class="creations">
+
+        <article class="creation">
+          <div class="creation__icon creation__icon--twitch">▶</div>
+          <h3 class="creation__title">Twitch</h3>
+          <p class="creation__desc">Lives já feitas na plataforma. <span class="placeholder">[ inserir link do canal ]</span></p>
+          <a href="#" class="creation__link placeholder-link">adicionar link →</a>
+        </article>
+
+        <article class="creation">
+          <div class="creation__icon creation__icon--music">♫</div>
+          <h3 class="creation__title">Canal de Música</h3>
+          <p class="creation__desc">Meu canal com produções musicais próprias. <span class="placeholder">[ inserir link do canal ]</span></p>
+          <a href="#" class="creation__link placeholder-link">adicionar link →</a>
+        </article>
+
+        <article class="creation">
+          <div class="creation__icon creation__icon--tiktok">✂</div>
+          <h3 class="creation__title">TikTok — Edits</h3>
+          <p class="creation__desc">Edições de músicas brasileiras. <span class="placeholder">[ inserir link do perfil ]</span></p>
+          <a href="#" class="creation__link placeholder-link">adicionar link →</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SOBRE ================= -->
+  <section id="sobre" class="section section--alt">
+    <div class="section__inner">
+      <p class="section__eyebrow">04 — sobre mim</p>
+      <h2 class="section__title">Sobre</h2>
+
+      <div class="about">
+        <div class="about__text">
+          <p class="placeholder-block">
+            [ Espaço reservado — escreva aqui sua história: quem você é, o que te motiva a programar,
+            por que quer entrar na Apple Developer Academy, e o que te torna único/a. Esse é o tipo de
+            texto que complementa o vídeo de 1 minuto pedido na inscrição. ]
+          </p>
+          <div class="about__contact">
+            <a href="#" class="btn btn--ghost placeholder-link">e-mail [adicionar]</a>
+            <a href="https://github.com/EduardoLopessz" target="_blank" rel="noopener" class="btn btn--ghost">github ↗</a>
+            <a href="#" class="btn btn--ghost placeholder-link">linkedin [adicionar]</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>feito com HTML, CSS e JS puro · Eduardo Lopes © <span id="year"></span></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
