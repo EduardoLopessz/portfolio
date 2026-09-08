@@ -535,6 +535,33 @@ img{ max-width: 100%; display: block; }
 .about__contact{ display: flex; gap: 12px; flex-wrap: wrap; margin-top: 8px; }
 
 /* =========================================================
+   COLOPHON (sobre este site)
+========================================================= */
+.colophon{
+  padding: 0 24px 64px;
+}
+.colophon__inner{
+  max-width: 1180px; margin: 0 auto;
+  border: 1px dashed var(--border);
+  border-radius: 12px;
+  padding: 20px 24px;
+  background: var(--surface);
+}
+.colophon__comment{
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--green);
+  margin: 0 0 8px;
+}
+.colophon__text{
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* =========================================================
    FOOTER
 ========================================================= */
 .footer{
