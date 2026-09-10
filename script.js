@@ -55,7 +55,7 @@ const statuses = [
 let statusIndex = 0;
 const hudStatus = document.getElementById('hudStatus');
 
-if (hudStatus && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+if (hudStatus) {
   setInterval(() => {
     statusIndex = (statusIndex + 1) % statuses.length;
     hudStatus.style.opacity = 0;

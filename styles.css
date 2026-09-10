@@ -45,7 +45,8 @@ img{ max-width: 100%; display: block; }
 }
 
 @media (prefers-reduced-motion: reduce){
-  *{ animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; }
+  html{ scroll-behavior: auto !important; }
+  .scroll-hint span{ animation: none !important; }
 }
 
 /* subtle scanline atmosphere */
