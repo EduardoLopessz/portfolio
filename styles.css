@@ -360,12 +360,40 @@ img{ max-width: 100%; display: block; }
 }
 .card__link:hover{ color: var(--green); border-color: var(--green); }
 
+.card__tag{
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+.card__tag--pessoal{ color: var(--green); }
+.card__tag--faculdade{ color: var(--blue); }
+.card__tag--colab{ color: var(--gold); }
+
 .card__title{
   font-family: var(--font-display);
   font-size: 1.25rem;
   margin: 0 0 10px;
 }
-.card__desc{ color: var(--text-muted); font-size: 0.92rem; flex-grow: 1; margin: 0 0 18px; }
+.card__desc{ color: var(--text-muted); font-size: 0.92rem; margin: 0 0 16px; }
+.card__meta{
+  flex-grow: 1;
+  display: flex; flex-direction: column; gap: 8px;
+  margin: 0 0 18px;
+}
+.card__meta p{ margin: 0; font-size: 0.85rem; color: var(--text-muted); }
+.card__meta-label{
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text);
+  margin-right: 6px;
+}
 .card__foot{ border-top: 1px solid var(--border); padding-top: 14px; }
 .card__demo{ font-family: var(--font-mono); font-size: 0.8rem; color: var(--green); }
 .card__demo--muted{ color: var(--text-muted); }
