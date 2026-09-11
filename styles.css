@@ -368,7 +368,7 @@ img{ max-width: 100%; display: block; }
   font-weight: 600;
   letter-spacing: 0.02em;
   color: var(--text-muted);
-  margin-bottom: 10px;
+  margin: 0 10px 10px 0;
 }
 .card__tag--pessoal{ color: var(--green); }
 .card__tag--faculdade{ color: var(--blue); }
